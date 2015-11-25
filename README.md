@@ -1,4 +1,4 @@
-jsonrpcclient-php - A PHP Pdo insert wrapper
+jsonrpcclient-php - A php jsonrpc v1 library 
 ==============================================
 
 JsonRPC v1 client written in PHP
