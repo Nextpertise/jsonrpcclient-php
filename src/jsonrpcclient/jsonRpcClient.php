@@ -1,5 +1,7 @@
 <?php
 
+namespace Jsonrpcclient;
+
 class JsonRpcException extends Exception {}
 class JsonConnException extends JsonRpcException {}
 class JsonOptException extends JsonRpcException {}
