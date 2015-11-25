@@ -11,6 +11,7 @@ The easiest way to install **jsonrpcclient-php** is to use [Composer](http://get
 Use
 ----------
 
+    <?php
     require 'vendor/autoload.php';
     
     use JsonRpcClient\JsonRpcClient;
@@ -32,3 +33,4 @@ Use
     echo "Succes\n";
     print_r($call);
     exit(0);
+    ?>
