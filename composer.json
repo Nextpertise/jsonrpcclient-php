@@ -1,0 +1,20 @@
+{
+    "name": "nextpertise/jsonrpcclient-php",
+    "description": "JsonRPC v1 client written in PHP.",
+    "license": "GPL-2.0+",
+    "homepage": "https://github.com/nextpertise/jsonrpcclient-php",
+    "authors": [
+        {
+            "name": "Teun Ouwehand",
+            "email": "teun@nextpertise.nl"
+        }
+    ],
+    "keywords": [
+        "jsonrpc"
+    ],
+    "autoload": {
+        "psr-0": {
+            "jsonrpcclient-php": "lib"
+        }
+    }
+}
