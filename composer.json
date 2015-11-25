@@ -1,5 +1,5 @@
 {
-    "name": "nextpertise/JsonRpcClient",
+    "name": "nextpertise/jsonrpcclient-php",
     "description": "JsonRPC v1 client written in PHP.",
     "license": "GPL-2.0+",
     "homepage": "https://github.com/nextpertise/jsonrpcclient-php",
