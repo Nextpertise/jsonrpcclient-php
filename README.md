@@ -10,27 +10,26 @@ The easiest way to install **jsonrpcclient-php** is to use [Composer](http://get
 
 Use
 ----------
+```php
+require 'vendor/autoload.php';
 
-    <?php
-    require 'vendor/autoload.php';
-    
-    use JsonRpcClient\JsonRpcClient;
-    
-    $jsonrpc = new JsonRpcClient();
-    $jsonrpc->setHost('127.0.0.1');
-    $jsonrpc->setPort(3000);
-    $jsonrpc->setPrefix('test.');
-    $jsonrpc->setReconnect(true);
-    $jsonrpc->setDebug(true);
-    
-    $call = "";
-    try {
-        $call = $jsonrpc->Test(7, 8);
-    } catch (Exception $e) {
-        print_r($e);
-        exit(1);
-    }
-    echo "Succes\n";
-    print_r($call);
-    exit(0);
-    ?>
+use JsonRpcClient\JsonRpcClient;
+
+$jsonrpc = new JsonRpcClient();
+$jsonrpc->setHost('127.0.0.1');
+$jsonrpc->setPort(3000);
+$jsonrpc->setPrefix('test.');
+$jsonrpc->setReconnect(true);
+$jsonrpc->setDebug(true);
+
+$call = "";
+try {
+    $call = $jsonrpc->Test(7, 8);
+} catch (Exception $e) {
+    print_r($e);
+    exit(1);
+}
+echo "Succes\n";
+print_r($call);
+exit(0);
+```
