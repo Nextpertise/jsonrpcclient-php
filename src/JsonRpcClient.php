@@ -234,6 +234,15 @@ class JsonRpcClient
             $recv = rtrim($recv);
             if ($recv[strlen($recv) - 1] == "}") {
                 $continue = !$this->checkJsonStream($reply);
+                
+                // if we have matching brackets and the last buffer returned was a full buffer we
+                // need to check if there are any CRLF characters left in the buffer and remove them
+                if ($continue === false && $result === 1024) {
+                    $result = socket_recv($this->socket, $recv, 2, MSG_DONTWAIT);
+                    if($this->isDebug()) {
+                        echo 'Received(' . strlen($recv) . '=' . $result . ') -> [' . $recv . "]\n";
+                    }
+                }
             } else {
                 $continue = true;
             }
